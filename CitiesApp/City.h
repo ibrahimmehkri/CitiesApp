@@ -10,12 +10,11 @@
 
 @interface City : NSObject
 
-@property NSString *id;
+@property NSString *ID;
 @property NSString *name;
-@property int population;
+@property NSNumber *population;
 
--(id)initWithName:(NSString *)name population:(int)pop; 
--(void)description; 
+-(NSString *)description; 
 @end
 
 

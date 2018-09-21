@@ -10,18 +10,8 @@
 
 @implementation City
 
--(id)initWithName:(NSString *)name population:(int)pop{
-    self = [super init];
-    if(self){
-        self.name = name;
-        self.population = pop;
-        self.id = @"Required";
-    }
-    return self; 
-}
-
--(void)description{
-    NSLog(@"Name: %@, Population: %i", self.name, self.population); 
+-(NSString *)description{
+    return [NSString stringWithFormat:@"Name: %@, Population: %@", self.name, self.population]; 
 }
 
 @end
